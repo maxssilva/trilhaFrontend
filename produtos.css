@@ -1,0 +1,91 @@
+header {
+  background: #bbbbbb;
+  padding: 20px;
+}
+.caixa {
+  /*deve-se tratá-la como uma caixa, uma divisão, subi-la um nível acima, alterando sua posição para relative, só assim se conteúdo poderá ser alterado*/
+  position: relative;
+  width: 940px;
+  margin: 0 auto; /*para cima e para baixo = 0 e nas laterais automatica*/
+}
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none; /*tirando sublinhado do texto*/
+}
+/*alterando comportamento para quando o mouse passa por cima*/
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0; /*espaçamento para cima e baixo de 50 e de 0 para os lados*/
+}
+.produtos li {
+  display: inline-block;
+  /* background: #ccc; usado apenas para facilitar a visualização do conteúdo para formatação*/
+  text-align: center;
+  width: 30%; /*dividindo o espaço lateral de cada item*/
+  vertical-align: top; /*alinhando itens com em relação ao componente superior*/
+  margin: 0 1.5%;
+  padding: 30px 20px; /*inserindo aqui, adiciona-se 20px aos 30% de cada caixa, e isso faz com que o tamanho final do width seja também aumentado, levando a uma descaracterização da caixa*/
+  box-sizing: border-box; /*para somar o padding, já considerando o valor final em % pode-se usar essa propriedade, ou seja, 30% é definitivo!*/
+
+  /* border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  mesmo resultado que a linha abaixo
+  */
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+/*alterando cor para quando o mouse passa por cima*/
+.produtos li:hover {
+  border-color: #c78c19;
+}
+
+/*alterando comportamento para quando o mouse está pressionado*/
+.produtos li:active {
+  border-color: #088c19;
+}
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.produtos li:hover h2 {
+  font-size: 35px;
+}
+.produto-descricao {
+  font-size: 18px;
+}
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px; /*para espaçar o bloco de preço da descrição*/
+}
+
+footer {
+  text-align: center; /*centraliza itens*/
+  background: url("./imagens/bg.jpg"); /*insere imagem de fundo */
+  padding: 40px 0px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 20px;
+}
