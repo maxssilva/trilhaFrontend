@@ -2,40 +2,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-header {
-  background: #bbbbbb;
-  padding: 20px;
-}
-.caixa {
-  /*deve-se tratá-la como uma caixa, uma divisão, subi-la um nível acima, alterando sua posição para relative, só assim se conteúdo poderá ser alterado*/
-  position: relative;
-  width: 940px;
-  margin: 0 auto; /*para cima e para baixo = 0 e nas laterais automatica*/
-}
-nav {
-  position: absolute;
-  top: 110px;
-  right: 0;
-}
-nav li {
-  display: inline;
-  margin: 0 0 0 15px;
-}
-nav a {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration: none; /*tirando sublinhado do texto*/
-}
-/*alterando comportamento para quando o mouse passa por cima*/
-nav a:hover {
-  color: #c78c19;
-  text-decoration: underline;
-}
+
 
 .produtos {
-  width: 940px;
+  width: 100%;
   margin: 0 auto;
   padding: 50px 0; /*espaçamento para cima e baixo de 50 e de 0 para os lados*/
 }
@@ -176,7 +146,7 @@ th {
 .principal {
   padding: 3em 0;
   background: #fefefe;
-  width: 940px;
+  width: 100%;
   margin: 0 auto;
 }
 .principal p {
@@ -198,7 +168,7 @@ th {
   background: linear-gradient(#fefefe, #888888);
 }
 .mapa-conteudo {
-  width: 940px;
+  width: 100%;
   margin: 0 auto;
 }
 .mapa p {
@@ -211,7 +181,7 @@ th {
 }
 
 .conteudo-beneficios {
-  width: 640px;
+  width: 100%;
   margin: 0 auto;
 }
 .lista-beneficios {
@@ -241,42 +211,6 @@ th {
 }
 
 .video {
-  width: 560px;
+  width: 100%;
   margin: 2em auto;
-}
-
-@media screen and (max-width: 480px) {
-  .caixa,
-  .principal,
-  .conteudo-beneficios,
-  .mapa-conteudo,
-  .video {
-    width: auto;
-  }
-  p,
-  form {
-    padding-left: 5px;
-    padding-right: 5px;
-    position: relative;
-  }
-  h1 {
-    text-align: center;
-  }
-  nav {
-    position: static;
-  }
-  nav a {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .lista-beneficios,
-  .imagem-beneficios {
-    width: 100%;
-    box-shadow: none;
-  }
-  .produtos li,
-  .form {
-    display: block;
-    width: auto;
-  }
 }
