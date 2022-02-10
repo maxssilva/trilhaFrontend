@@ -1,0 +1,51 @@
+header {
+  background: #bbbbbb;
+  padding: 20px;
+}
+
+.caixa {
+  /*deve-se tratá-la como uma caixa, uma divisão, subi-la um nível acima, alterando sua posição para relative, só assim se conteúdo poderá ser alterado*/
+  margin: 0 auto; /*para cima e para baixo = 0 e nas laterais automatica*/
+  max-width: 940px;
+}
+
+.caixa img {
+  margin: 0 auto;
+  display: block;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 7.5px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none; /*tirando sublinhado do texto*/
+}
+
+/*alterando comportamento para quando o mouse passa por cima*/
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .caixa img {
+    margin: 0;
+    display: initial;
+  }
+}
